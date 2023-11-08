@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap"
 import Formu from "./components/Form"
 import DrinksList from "./components/DrinksList"
+import ModalDrinks from "./components/ModalDrinks"
 import { CategoriesProvider } from "./context/CategoriesProvider"
 import { DrinksProvider } from "./context/DrinksProvider"
 
@@ -15,7 +16,11 @@ function App() {
 
         <Container className="mt-5">
           <Formu />
+
           <DrinksList />
+
+          <ModalDrinks />
+          
         </Container>
       </DrinksProvider>
 
