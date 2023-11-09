@@ -3,7 +3,7 @@ import useDrinks from "../hooks/useDrinks"
 
 const Drink = ({drink}) => {
     
-    const { handleModalClick } = useDrinks()
+    const { handleModalClick, handleDrinksIdClick } = useDrinks()
   return (
     <Col md={6} lg={3}>
         <Card className="mb-4">
@@ -23,6 +23,7 @@ const Drink = ({drink}) => {
                     className="w-100 text-uppercase mt-2"
                     onClick={ () => {
                         handleModalClick()
+                        handleDrinksIdClick(drink.idDrink)
                     }}
                 >
                     See Recipe
