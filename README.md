@@ -4,7 +4,6 @@
 
   <img src="captura1.png" alt="logo" height="auto" />
   <img src="captura2.png" alt="logo" height="auto" />
-  <img src="captura3.png" alt="logo" height="auto" />
 
   <br/>
 
