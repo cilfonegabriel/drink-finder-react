@@ -3,7 +3,7 @@ import useDrinks from "../hooks/useDrinks"
 
 const ModalDrinks = () => {
 
-    const { modal,handleModalClick, recipe } = useDrinks()
+    const { modal,handleModalClick, recipe, loading } = useDrinks()
 
     const showIngradients = () => {
         let ingredients = []
@@ -18,23 +18,25 @@ const ModalDrinks = () => {
     }
 
     return (
-        <Modal show={modal} onHide={handleModalClick}>
-            <Image 
-                src={recipe.strDrinkThumb}
-                alt={`Recipe image${recipe.strDrink}`}
-            />
-            <Modal.Header>
-                <Modal.Title>{recipe.strDrink}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <div className="p-3">
-                    <h2>Instructions</h2>
-                    {recipe.strInstructions}
-                    <h2>Ingredients and Quantities</h2>
-                    {showIngradients()}
-                </div>
-            </Modal.Body>
-        </Modal>
+        !loading && (
+            <Modal show={modal} onHide={handleModalClick}>
+                <Image 
+                    src={recipe.strDrinkThumb}
+                    alt={`Recipe image${recipe.strDrink}`}
+                />
+                <Modal.Header>
+                    <Modal.Title>{recipe.strDrink}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="p-3">
+                        <h2>Instructions</h2>
+                        {recipe.strInstructions}
+                        <h2>Ingredients and Quantities</h2>
+                        {showIngradients()}
+                    </div>
+                </Modal.Body>
+            </Modal>
+        )
     )
 }
 
