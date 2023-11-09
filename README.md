@@ -35,6 +35,8 @@
 
 This app was created as part of the course "React - The Complete Guide: Hooks Context Redux MERN +15 Apps"!
 
+Use the API of: https://thecocktaildb.com/api.php
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
