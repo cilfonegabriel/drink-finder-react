@@ -19,11 +19,17 @@ const ModalDrinks = () => {
 
     return (
         !loading && (
-            <Modal show={modal} onHide={handleModalClick}>
+            <Modal show={modal} onHide={handleModalClick}  >
                 <Image 
                     src={recipe.strDrinkThumb}
                     alt={`Recipe image${recipe.strDrink}`}
                 />
+                <button 
+                    className="btn-close " 
+                    onClick={handleModalClick}
+                    style={{ position: 'absolute', top: '0', right: '0', zIndex: '9999' }}
+                >
+                </button>
                 <Modal.Header>
                     <Modal.Title>{recipe.strDrink}</Modal.Title>
                 </Modal.Header>
