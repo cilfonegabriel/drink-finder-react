@@ -21,7 +21,7 @@ const DrinksProvider = ({children}) => {
                 const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinksId}`
 
                 const { data } = await axios(url)
-                console.log(data.drinks[0])
+                setRecipe(data.drinks[0])
             } catch (error) {
                 console.log(error)
             }
