@@ -2,8 +2,9 @@
   
   <h3><b>Drink Finder App</b></h3>
 
-  <img src="captura1.png" alt="logo" height="auto" />
-  <img src="captura2.png" alt="logo" height="auto" />
+  <img src="Captura1.png" alt="logo" height="auto" />
+  <img src="Captura2.png" alt="logo" height="auto" />
+  <img src="Captura3.png" alt="logo" height="auto" />
 
   <br/>
 
